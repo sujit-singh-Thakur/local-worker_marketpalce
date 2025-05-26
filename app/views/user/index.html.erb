@@ -1,0 +1,13 @@
+<h1>User#index</h1>
+<p>Find me in app/views/user/index.html.erb</p>
+
+<% @items.each do |first|%>
+id: <%= first.id%>
+name: <%= first.name%>
+email: <%= first.email%>
+contact_number: <%= first.contact%>
+<%= first.type%>
+<br>
+<%end%>
+
+
