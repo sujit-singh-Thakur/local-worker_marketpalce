@@ -27,13 +27,13 @@ def create
       contact: params[:contact]})
     if @user.save
       redirect_to worker_home_url
-       
+
     else
       render :new
     end
   end
   
-end
+endggggggggggggggggggggggggggggggggggggg
 
 
 
