@@ -1,8 +1,8 @@
 require "test_helper"
 
 class WorkerControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get worker_index_url
+  test "should get home" do
+    get worker_home_url
     assert_response :success
   end
 end

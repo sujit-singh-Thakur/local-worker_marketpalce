@@ -5,7 +5,7 @@ class CreateTasks < ActiveRecord::Migration[8.0]
       t.string :contact_info
       t.integer :catagory_id
       t.references :contractor, null: false, foreign_key: {to_table: :users}
-
+      
       t.timestamps
     end
   end

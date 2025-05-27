@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get "worker/index"
-  get "contractor/index"
-   get '/home'=> 'user#home'
+ 
   #  get "index"
   root "user#home"
   get '/user_index' => 'user#index'
@@ -9,17 +7,18 @@ Rails.application.routes.draw do
   get '/user_profile' => 'user#new'
   post '/user_profile'=> 'user#create'
 
-  get '/contractor_profile' => 'contractor#new'
-  post '/contractor_profile'=> 'contractor#create'
-
-
-  get '/worker_profile' => 'worker#new'
-  post '/worker_profile'=> 'worker#create'
-
   get '/all_workers' => 'worker#index'
   get '/all_contractors' => 'contractor#index'
 
   get '/all_users' => 'user#index'
+
+  get '/contractor_home' => 'contractor#home'
+  get '/worker_home' => 'worker#home'
+
+
+  get '/new_task' => 'task#new'
+  post '/new_task' => 'task#create'
+
  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

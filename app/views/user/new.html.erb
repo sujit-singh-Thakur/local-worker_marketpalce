@@ -1,6 +1,6 @@
 <h1> this is profile page</h1>
 
-<%= form_with User: @contractor do |first|%>
+<%= form_with User: @user do |first|%>
 
 <div>
 <%=first.label :name%><br>
@@ -20,7 +20,7 @@
 
 <div>
 <%=first.label :role%><br>
-<%= first.select :type, options_for_select(["Contractor", "Worker"]) %>
+<%= first.select :type,[["Contractor", "contractor"],["Worker","worker"]] %>
 
 </div>
 <br>

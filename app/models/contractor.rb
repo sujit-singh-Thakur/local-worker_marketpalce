@@ -1,3 +1,5 @@
 class Contractor < User
-  has_many :task,foreign_key: :contractor_id
+  has_many :tasks
+
+
 end
