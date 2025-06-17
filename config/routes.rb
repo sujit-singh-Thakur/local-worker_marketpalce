@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
  
+  resources :contractor
+  resources :worker
+  
   #  get "index"
   root "user#home"
   get '/user_index' => 'user#index'
